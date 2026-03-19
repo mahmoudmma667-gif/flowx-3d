@@ -1,0 +1,126 @@
+generator client {
+  provider = "prisma-client-js"
+  engineType = "client"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  role          String    @default("USER")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  models          Model3D[]
+  favorites       Favorite[]
+  uploadSessions  UploadSession[]
+  adminLogs       AdminLog[]
+  fileAttachments FileAttachment[]
+}
+
+model Model3D {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  url         String
+  thumbnail   String?
+  format      String   @default("glb")
+  size        Int
+  vertices    Int?
+  published   Boolean  @default(false)
+  userId      String
+  categoryId  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User      @relation(fields: [userId], references: [id])
+  category    Category? @relation(fields: [categoryId], references: [id])
+  tags        ModelTag[]
+  favorites   Favorite[]
+  analytics   AnalyticsEvent[]
+  attachments FileAttachment[]
+}
+
+model FileAttachment {
+  id          String   @id @default(cuid())
+  name        String
+  url         String
+  type        String   @default("OTHER")
+  size        Int
+  modelId     String?
+  userId      String
+  createdAt   DateTime @default(now())
+
+  model       Model3D? @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  models      Model3D[]
+}
+
+model Tag {
+  id          String     @id @default(cuid())
+  name        String     @unique
+  models      ModelTag[]
+}
+
+model ModelTag {
+  modelId     String
+  tagId       String
+  model       Model3D @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  tag         Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([modelId, tagId])
+}
+
+model Favorite {
+  userId      String
+  modelId     String
+  createdAt   DateTime @default(now())
+  
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  model       Model3D @relation(fields: [modelId], references: [id], onDelete: Cascade)
+
+  @@id([userId, modelId])
+}
+
+model UploadSession {
+  id          String   @id @default(cuid())
+  userId      String
+  fileName    String
+  fileSize    Int
+  status      String
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+  
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model AnalyticsEvent {
+  id          String   @id @default(cuid())
+  modelId     String
+  eventType   String
+  meta        String?
+  createdAt   DateTime @default(now())
+  
+  model       Model3D  @relation(fields: [modelId], references: [id])
+}
+
+model AdminLog {
+  id          String   @id @default(cuid())
+  userId      String
+  action      String
+  target      String?
+  details     String?
+  createdAt   DateTime @default(now())
+  
+  user        User     @relation(fields: [userId], references: [id])
+}

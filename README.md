@@ -21,6 +21,10 @@
 
 [**Live Demo**](https://flowx-3d.vercel.app) • [**Air-Sketch Studio**](https://flowx-3d.vercel.app/air-sketch) • [**Documentation**](#-system-architecture) • [**Report Bug**](https://github.com/mahmoudmma667-gif/flowx-3d/issues) • [**Request Feature**](https://github.com/mahmoudmma667-gif/flowx-3d/issues)
 
+<br/>
+
+<img src="docs/images/hero-interface.jpg" alt="Flowx 3D Spatial Intelligence Interface" width="100%" />
+
 </div>
 
 ---
@@ -70,6 +74,15 @@ By leveraging cutting-edge web-based machine learning (WASM with GPU acceleratio
 ---
 
 ## 🚀 Core Innovation & Features
+
+### 📸 Visual Showcase & Real-Time Interaction
+
+| 🖐️ Neural 3D Inspection & Hand Landmark Tracking | 📐 Air-Sketch Topology & Wireframe Form Extrusion |
+| :---: | :---: |
+| <img src="docs/images/neural-model-viewer.jpg" width="100%" alt="Neural 3D Model Viewer" /> | <img src="docs/images/air-sketch-wireframe.jpg" width="100%" alt="Air-Sketch Wireframe Extrusion" /> |
+| *Real-time 6DOF hand pose tracking with MediaPipe overlay in 3D scene* | *Sub-millimeter parametric extrusion with real-time wireframe inspection* |
+
+---
 
 ### 1. Air-Sketch Neural Studio
 Draw and sculpt in 3-dimensional Cartesian space using natural hand gestures:

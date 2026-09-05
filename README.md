@@ -19,7 +19,7 @@
 [![Vitest](https://img.shields.io/badge/Tested_with-Vitest-FCC72B?style=for-the-badge&logo=vitest&logoColor=black)](https://vitest.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-[**Live Demo**](https://flowx-3d.vercel.app) • [**Air-Sketch Studio**](https://flowx-3d.vercel.app/air-sketch) • [**Documentation**](#-system-architecture) • [**Report Bug**](https://github.com/mahmoudmma667-gif/flowx-3d/issues) • [**Request Feature**](https://github.com/mahmoudmma667-gif/flowx-3d/issues)
+[**Live Demo**](https://flowx-3d.vercel.app) • [**Air-Sketch Studio**](https://flowx-3d.vercel.app/air-sketch) • [**R&D Archive (المشاريع غير المنشورة)**](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11) • [**Documentation**](#-system-architecture) • [**Report Bug**](https://github.com/mahmoudmma667-gif/flowx-3d/issues)
 
 <br/>
 
@@ -333,6 +333,21 @@ npm run test
 4. Deploy! Next.js 16 handles route optimization and bundle splitting automatically.
 
 > **Production Storage Advisory**: For enterprise scale with millions of uploaded `.glb`/`.obj` files, connect AWS S3, Cloudflare R2, or Vercel Blob instead of local filesystem storage.
+
+---
+
+## 🔮 R&D Vault & Unpublished Innovations (المزيد من المشاريع والنماذج)
+
+> ### 📂 [Explore More Innovative & Unpublished Projects on Google Drive](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11)
+> 
+> Discover an exclusive collection of experimental prototypes, unpublished spatial computing concepts, neural interface benchmarks, and confidential R&D repositories by **Mahmoud Labib**:
+> 
+> - 🧪 **Experimental Computer Vision & Gesture Prototypes**
+> - 🕹️ **Real-Time Physics & Neural Interaction Engines**
+> - 📐 **Procedural Generative CAD & Spatial Mathematics**
+> - ⚡ **High-Throughput WebAssembly & WebGL Experiments**
+> 
+> 👉 **[Click here to access the Full Projects Archive & R&D Labs](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11)**
 
 ---
 

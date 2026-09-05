@@ -17,7 +17,7 @@
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Prisma ORM](https://img.shields.io/badge/Prisma-v7.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
 
-[**تجربة النسخة الحية**](https://flowx-3d.vercel.app) • [**استوديو الرسم الهوائي**](https://flowx-3d.vercel.app/air-sketch) • [**معمارية النظام**](#-معمارية-النظام) • [**الإبلاغ عن خطأ**](https://github.com/mahmoudmma667-gif/flowx-3d/issues)
+[**تجربة النسخة الحية**](https://flowx-3d.vercel.app) • [**استوديو الرسم الهوائي**](https://flowx-3d.vercel.app/air-sketch) • [**أرشيف المشاريع غير المنشورة (Drive)**](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11) • [**معمارية النظام**](#-معمارية-النظام)
 
 <br/>
 
@@ -177,6 +177,21 @@ npm run dev
 ```
 
 افتح المتصفح على: `http://localhost:3000` وامنح المتصفح إذن الوصول للكاميرا للبدء.
+
+---
+
+## 📂 أرشيف المشاريع والنماذج الأولية غير المنشورة (R&D Labs)
+
+> ### 🚀 [استكشف المزيد من المشاريع التجريبية والنماذج غير المنشورة على Google Drive](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11)
+>
+> وصول حصري إلى حزمة من النماذج الأولية، أبحاث الرؤية الحاسوبية، وتطبيقات الحوسبة المكانية والذكاء الاصطناعي قيد التطوير التي لم تُنشر بعد للمطور **محمود لبيب**:
+>
+> - 🧪 **نماذج تجريبية متقدمة في الرؤية الحاسوبية وتتبع الحركة**
+> - 🕹️ **محركات فيزيائية وتفاعلية فورية للألعاب والأنظمة الذكية**
+> - 📐 **خوارزميات هندسية متقدمة وتصميم بارامتري ثلاثي الأبعاد**
+> - ⚡ **تجارب الأداء الفائق عبر WebAssembly و WebGL**
+>
+> 🔗 **[اضغط هنا لفتح مجلد المشاريع الكامل على Google Drive](https://drive.google.com/drive/folders/1kiHqqwVdxUSoqlmwTYuLyLCfzqskKq11)**
 
 ---
 
